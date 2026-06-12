@@ -8,15 +8,16 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
 - List at least two concrete bugs you noticed at the start  
   (for example: "the hints were backwards").
 
+*  Hitting Enter to apply my numberNumber is taken as input guess Nothing happens  
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| 43 | Hint tells me to go higher | Hint told me to go lower | ? |
+| New Game button clicked | New game is started and allows me to start guessing again | Does not allow me to make guesses | ? |
+| -5 | Number is not taken as input guess since its lower than 1 | Allows the guess | Should give error saying input cannot be < 1 |
 
 ---
 
