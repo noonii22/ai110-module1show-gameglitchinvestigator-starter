@@ -9,6 +9,8 @@ Answer each question in 3 to 5 sentences. Be specific and honest about what actu
   (for example: "the hints were backwards").
 
 *  Hitting Enter to apply my numberNumber is taken as input guess Nothing happens  
+* The higher lower guessing markers are incorrect.
+
 **Bug Reproduction Log**
 
 Document at least 3 bugs you found. Add rows as needed.
@@ -27,6 +29,10 @@ Document at least 3 bugs you found. Add rows as needed.
 - Give one example of an AI suggestion that was correct (including what the AI suggested and how you verified the result).
 - Give one example of an AI suggestion that was incorrect or misleading (including what the AI suggested and how you verified the result).
 
+I used Claude Code on this project and an example of and AI suggestion that was correct was fixing the high/low bug that was causing the user to be mislead after each guess. I was able to also have Claude correctly point out to me what might be causing the game to not restart properly when we want to start a new game. It was nice to have it pinpoint me quickly and allow me to start reading and when I got confused I had it clarify some of that confusion
+
+One example where it was misleading was when I had to make the test file. I did not read my directory correctly so it instead created a new test directory and made the test file in there. When I tried running the test I would get an error saying that the directory naming convention is incorrect which is when I realized that the agent made a new directory with a seperate new name for it. 
+
 ---
 
 ## 3. Debugging and testing your fixes
@@ -35,6 +41,14 @@ Document at least 3 bugs you found. Add rows as needed.
 - Describe at least one test you ran (manual or using pytest)  
   and what it showed you about your code.
 - Did AI help you design or understand any tests? How?
+
+I would run it and also had the agent generate some simple tests for it. For the frontend related things I just tested it myself by visually seeing if it worked. 
+
+I had a pytest for seeing if the high/low hints worked properly after each guess which showed me the logic still worked well after the refactoring we did.
+
+AI helped me more so pin point bugs and be able to identify why it might be a cause. As for designing it was pretty straightforward testing we did this time around so nothing complex.
+
+
 
 ---
 

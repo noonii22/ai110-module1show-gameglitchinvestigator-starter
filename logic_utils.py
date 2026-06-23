@@ -12,13 +12,24 @@ def parse_guess(raw: str):
     raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
 
 
+#FIX: Refactored logic of check_guess into this file using agent mode
 def check_guess(guess, secret):
     """
     Compare guess to secret and return (outcome, message).
 
     outcome examples: "Win", "Too High", "Too Low"
     """
-    raise NotImplementedError("Refactor this function from app.py into logic_utils.py")
+    try:
+        guess = int(guess)
+        secret = int(secret)
+    except (TypeError, ValueError):
+        pass
+
+    if guess == secret:
+        return "Win", "🎉 Correct!"
+    if guess > secret:
+        return "Too High", "📉 Go LOWER!"
+    return "Too Low", "📈 Go HIGHER!"
 
 
 def update_score(current_score: int, outcome: str, attempt_number: int):
