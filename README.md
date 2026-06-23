@@ -26,18 +26,22 @@ It wrote the code, ran away, and now the game is unplayable.
 ## 📝 Document Your Experience
 
 - [ ] Describe the game's purpose.
+Purpose is to allow a user to have a fun experience trying to guess a number and giving the user the option to utilize hints if needed.
 - [ ] Detail which bugs you found.
+I found a bug not giving the correct reponse for values that are above or below the answer value. I also found a bug that does not allow the user to properly restart their game after each game.
 - [ ] Explain what fixes you applied.
+I applied a fix to both bugs and proper tests to ensure that the refactor and debbuging process stays correct
+
 
 ## 📸 Demo Walkthrough
 
 Describe your fixed game in numbered steps so a reader can follow along without watching a video:
 
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
+1. User guesses a number between 1 to 100
+2. If user has the hint box checked then the game will return too low or too high depending on the guess and answer
+3. User enters multiple tries until they correctly guess the number or run out of tries
+4. Score updates correctly after each guess
+5. Game ends after the correct guess or exceeding number of tries
 
 **Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
 

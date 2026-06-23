@@ -56,6 +56,7 @@ AI helped me more so pin point bugs and be able to identify why it might be a ca
 
 - How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
 
+This personally was my first time using streamlit but how I understood it was that for every change I made it would reset on every run so it explains some other untended bugs like the history feature. 
 ---
 
 ## 5. Looking ahead: your developer habits
@@ -64,3 +65,9 @@ AI helped me more so pin point bugs and be able to identify why it might be a ca
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+I like the habit of having the specific details in my prompt questions and making sure that I'm thorough in how I explain my changes. It makes the whole process a lot easier instead of having to reprompt if after it assumes things, 
+
+As for what I would do differently I think I want to direct it more on what I want. This time around I let it suggest test cases to make but next time I want to have an idea of test cases I want specifically and have it generate those for me.
+
+This helped in how I interact with AI in my prompts and how I can strategically be detailed in my prompts. I think also discovering that it can write up commit messages and do a lot more than I thought was something that changed the way I think about the use cases for a tool like this.
